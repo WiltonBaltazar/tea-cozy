@@ -1,0 +1,162 @@
+html{
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: black;
+    opacity: 0.9;
+    color: seashell;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: 1px solid seashell;
+    
+}
+.header .navbar{
+    display: flex;
+    padding: 0 10px;
+    height: 69px;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.navbar .logo{
+    height: 50px
+}
+
+.navbar .nav{
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav li{
+    margin-right: 20px;
+}
+
+.navbar .nav li a{
+    color: seashell;
+}
+
+/* Hero */
+.hero{
+    max-width: 1200px;
+    background-image: url("../images/img-mission-background.webp");
+    margin: 0 auto;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    margin-top: 69px;
+}
+
+.hero .hero-content{
+    background-color: black;
+    width: 100%;
+}
+
+.tea-showcase{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.tea-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.tea-boxes .tea-box{
+    margin: 15px;
+}
+.tea-boxes .tea-box img{
+    width: 300px;
+    height: 200px;
+}
+
+.tea-boxes .tea-box h3{
+    margin-top: 10px;
+}
+
+.locations::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    
+}
+
+
+.locations{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    background-image: url("../images/img-locations-background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+}
+
+.locations > * {
+    z-index: 10;
+}
+
+
+.locations h2{
+    margin-bottom: 15px;
+}
+.locations .location-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.locations .location-box{
+    background-color: black;
+    width: 300px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+   
+}
+
+.locations .location-box:nth-last-child(){
+    margin-right: 0;
+   
+}
+
+
+.contacts{
+    height: 200px;
+}
+
+.footer{
+    padding: 0 20px;
+    text-align: left;
+}
